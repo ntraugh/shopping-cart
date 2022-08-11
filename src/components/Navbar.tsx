@@ -6,9 +6,9 @@ import { useShoppingCart } from "../context/ShoppingCartContext"
 const Navbar = () => {
     const { openCart, cartQuantity } = useShoppingCart()
   return (
-    <NavbarBs sticky="top" className="bg-white shadow-sm mb-3 ">
-        <Container>
-            <Nav className="me-auto">
+    <NavbarBs sticky="top" className="bg-white shadow-sm px-3">
+        {/* <Container> */}
+            <Nav className="me-auto py-2">
                 <Nav.Link to="/" as={NavLink}>
                     Home
                 </Nav.Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
                 </Button>
             )}
-        </Container>
+        {/* </Container> */}
 
     </NavbarBs>
   )
