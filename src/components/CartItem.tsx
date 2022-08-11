@@ -15,8 +15,10 @@ const CartItem = ({ id, quantity }: CartItemProps) => {
     if(item === null) return null
 
     return (
+        // Stack is from bootstrap, we make the direction horizontal essentialy a display flex option
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
             <img src={item?.imgUrl} style={{ width: "125px", height: "75px", objectFit: "cover" }} />
+            {/* me-auto, margin end auto, ms-auto margin start auto */}
             <div className="me-auto">
                 <div>
                     {/* display the item name and a space, then IF the quantity is greater than 1 we will show the span class */}
